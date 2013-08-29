@@ -1,0 +1,16 @@
+{
+  "name": "todos-mvc",
+  "dependencies": {
+    "ember": "http://builds.emberjs.com/latest/ember.js",
+    "ember-data": "http://builds.emberjs.com/latest/ember-data.js",
+    "ember-prod": "http://builds.emberjs.com/latest/ember.prod.js",
+    "handlebars": "1.0.0",
+    "jquery": "~1.9.1",
+    "qunit": "~1.12.0",
+    "todomvc-common": "~0.1.4",
+    "ember-localstorage-adapter": "latest"
+  },
+  "resolutions": {
+    "ember": "e-tag:7261c4317"
+  }
+}
