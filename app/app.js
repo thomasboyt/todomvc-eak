@@ -7,10 +7,10 @@ var App = Ember.Application.create({
   Resolver: Resolver
 });
 
-import routes from 'todos/routes';
-App.Router.map(routes); // TODO: just resolve the router
-
 import Store from 'todos/store';
 App.Store = Store;
+
+import routes from 'todos/routes';
+App.Router.map(routes); // TODO: just resolve the router
 
 export default App;
