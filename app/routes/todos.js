@@ -1,10 +1,7 @@
-import Todo from "todos/models/todo";
-
 var TodosRoute = Ember.Route.extend({
-  model: function () {
-    //return this.container.lookupFactory("model:todo").find();
-    return Todo.find();
-  }
+	model: function () {
+		return this.store.find('todo');
+	}
 });
 
 export default TodosRoute;

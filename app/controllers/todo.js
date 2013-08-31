@@ -1,18 +1,22 @@
- var TodoController = Ember.ObjectController.extend({
-  isEditing: false,
+var TodoController = Ember.ObjectController.extend({
+	isEditing: false,
 
-  actions: {
-    editTodo: function () {
-      this.set('isEditing', true);
-    },
+	actions: {
+		editTodo: function () {
+			this.set('isEditing', true);
+		},
 
-    removeTodo: function () {
-      var todo = this.get('model');
+		doneEditing: function () {
+			this.set('isEditing', false);
+		},
 
-      todo.deleteRecord();
-      todo.get('store').commit();
-    }
-  }
+		removeTodo: function () {
+			var todo = this.get('model');
+
+			todo.deleteRecord();
+			todo.save();
+		}
+	}
 });
 
 export default TodoController;
